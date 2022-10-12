@@ -6,7 +6,7 @@
     "searchKey":"Scene",
     "props":{"width":960,"sceneColor":"#000000","height":640},
     "nodeParent":-1,
-    "maxID":23,
+    "maxID":33,
     "label":"Scene",
     "isOpen":true,
     "isDirectory":true,
@@ -18,7 +18,7 @@
             "x":15,
             "type":"Sprite",
             "searchKey":"Sprite,Canvas",
-            "props":{"y":0,"x":0,"name":"Canvas"},
+            "props":{"y":319,"x":479,"width":2,"name":"Canvas","height":2},
             "nodeParent":2,
             "label":"Canvas",
             "isOpen":true,
@@ -31,16 +31,17 @@
                     "x":30,
                     "type":"Sprite",
                     "searchKey":"Sprite,bg",
-                    "props":{"y":0,"x":1.75,"texture":"res/bg.png","name":"bg"},
+                    "props":{"y":-319,"x":-479,"texture":"res/bg.png","name":"bg"},
                     "nodeParent":4,
                     "label":"bg",
-                    "isOpen":false,
+                    "isOpen":true,
                     "isDirectory":true,
                     "isAniNode":true,
                     "hasChild":true,
                     "compId":8,
                     "child":[
                         {
+                            "x":45,
                             "type":"Sprite",
                             "searchKey":"Sprite,line",
                             "props":{"y":108,"x":577,"texture":"res/line.png","name":"line"},
@@ -53,9 +54,10 @@
                             "compId":9,
                             "child":[
                                 {
+                                    "x":60,
                                     "type":"Label",
                                     "searchKey":"Label,lblCountDownKey",
-                                    "props":{"y":-31,"x":19,"width":56,"text":"倒计时：","name":"lblCountDownKey","height":20,"fontSize":16,"color":"#8d5352","bold":true},
+                                    "props":{"y":-31,"x":19,"width":56,"text":"倒计时： ","name":"lblCountDownKey","height":20,"fontSize":16,"color":"#8d5352","bold":true},
                                     "nodeParent":9,
                                     "label":"lblCountDownKey",
                                     "isDirectory":false,
@@ -66,6 +68,7 @@
                                         ]
                                 },
                                 {
+                                    "x":60,
                                     "type":"Label",
                                     "searchKey":"Label,lblCountDownValue",
                                     "props":{"y":-31,"x":75,"width":56,"text":"100","name":"lblCountDownValue","height":19,"fontSize":16,"color":"#8d5352","bold":true},
@@ -79,9 +82,10 @@
                                         ]
                                 },
                                 {
+                                    "x":60,
                                     "type":"Label",
                                     "searchKey":"Label,lblScoreKey",
-                                    "props":{"y":16,"x":28,"width":56,"valign":"middle","text":"得分：","name":"lblScoreKey","height":19,"fontSize":16,"color":"#8d5352","bold":false},
+                                    "props":{"y":16,"x":28,"width":56,"valign":"middle","text":"得分： ","name":"lblScoreKey","height":19,"fontSize":16,"color":"#8d5352","bold":false},
                                     "nodeParent":9,
                                     "label":"lblScoreKey",
                                     "isDirectory":false,
@@ -93,9 +97,10 @@
                                     "$LOCKED":false
                                 },
                                 {
+                                    "x":60,
                                     "type":"Label",
                                     "searchKey":"Label,lblScoreValue",
-                                    "props":{"y":16,"x":66.5,"width":56,"valign":"middle","text":"100","name":"lblScoreValue","height":20,"fontSize":16,"color":"#8d5352","bold":false},
+                                    "props":{"y":16,"x":66.5,"width":56,"valign":"middle","text":"0","name":"lblScoreValue","height":20,"fontSize":16,"color":"#8d5352","bold":false},
                                     "nodeParent":9,
                                     "label":"lblScoreValue",
                                     "isDirectory":false,
@@ -112,7 +117,7 @@
                     "x":30,
                     "type":"Sprite",
                     "searchKey":"Sprite,dialogGameOver",
-                    "props":{"y":127,"x":271,"texture":"res/dialog.png","name":"dialogGameOver"},
+                    "props":{"y":-192,"x":-209,"visible":false,"texture":"res/dialog.png","name":"dialogGameOver"},
                     "nodeParent":4,
                     "label":"dialogGameOver",
                     "isOpen":true,
@@ -139,7 +144,7 @@
                             "x":45,
                             "type":"Label",
                             "searchKey":"Label,lblScoreCurrentKey",
-                            "props":{"y":132,"x":99,"width":134,"text":"当前成绩：","name":"lblScoreCurrentKey","height":35,"fontSize":32,"color":"#d4bab9","bold":true},
+                            "props":{"y":131,"x":125,"width":134,"text":"当前成绩： ","name":"lblScoreCurrentKey","height":35,"fontSize":32,"color":"#d4bab9","bold":true},
                             "nodeParent":16,
                             "label":"lblScoreCurrentKey",
                             "isDirectory":false,
@@ -153,7 +158,7 @@
                             "x":45,
                             "type":"Label",
                             "searchKey":"Label,lblScoreCurrentValue",
-                            "props":{"y":132,"x":251,"width":68,"text":"100","name":"lblScoreCurrentValue","height":33,"fontSize":32,"color":"#d4bab9","bold":true},
+                            "props":{"y":131,"x":277,"width":68,"text":"0","name":"lblScoreCurrentValue","height":33,"fontSize":32,"color":"#d4bab9","bold":true},
                             "nodeParent":16,
                             "label":"lblScoreCurrentValue",
                             "isDirectory":false,
@@ -161,13 +166,14 @@
                             "hasChild":false,
                             "compId":19,
                             "child":[
-                                ]
+                                ],
+                            "$HIDDEN":false
                         },
                         {
                             "x":45,
                             "type":"Label",
                             "searchKey":"Label,lblScoreHightKey",
-                            "props":{"y":192.5,"x":117,"width":134,"text":"历史最高：","name":"lblScoreHightKey","height":35,"fontSize":26,"color":"#d4bab9","bold":true},
+                            "props":{"y":190,"x":142,"width":134,"text":"历史最高： ","name":"lblScoreHightKey","height":35,"fontSize":26,"color":"#d4bab9","bold":true},
                             "nodeParent":16,
                             "label":"lblScoreHightKey",
                             "isDirectory":false,
@@ -181,7 +187,7 @@
                             "x":45,
                             "type":"Label",
                             "searchKey":"Label,lblScoreHightValue",
-                            "props":{"y":192.5,"x":241,"width":68,"text":"100","name":"lblScoreHightValue","height":33,"fontSize":26,"color":"#d4bab9","bold":true},
+                            "props":{"y":192,"x":266,"width":68,"text":"0","name":"lblScoreHightValue","height":33,"fontSize":26,"color":"#d4bab9","bold":true},
                             "nodeParent":16,
                             "label":"lblScoreHightValue",
                             "isDirectory":false,
@@ -193,19 +199,83 @@
                         },
                         {
                             "x":45,
-                            "type":"Sprite",
-                            "searchKey":"Sprite,btn",
-                            "props":{"name":"btn"},
+                            "type":"Image",
+                            "searchKey":"Image,btnPlayAgain",
+                            "props":{"y":253,"x":133,"width":134,"skin":"res/button.png","name":"btnPlayAgain","height":64},
                             "nodeParent":16,
-                            "label":"btn",
-                            "isDirectory":false,
+                            "label":"btnPlayAgain",
+                            "isOpen":true,
+                            "isDirectory":true,
                             "isAniNode":true,
-                            "hasChild":false,
-                            "compId":22,
+                            "hasChild":true,
+                            "compId":23,
                             "child":[
-                                ]
-                        }]
+                                {
+                                    "x":60,
+                                    "type":"Label",
+                                    "searchKey":"Label,lblBtnTitle",
+                                    "props":{"y":19.5,"x":22,"width":90,"text":"再来一次","name":"lblBtnTitle","height":25,"fontSize":24,"color":"#000","bold":false},
+                                    "nodeParent":23,
+                                    "label":"lblBtnTitle",
+                                    "isDirectory":false,
+                                    "isAniNode":true,
+                                    "hasChild":false,
+                                    "compId":25,
+                                    "child":[
+                                        ]
+                                }]
+                        }],
+                    "$HIDDEN":false
+                },
+                {
+                    "x":30,
+                    "type":"Widget",
+                    "switchAble":true,
+                    "searchKey":"Widget",
+                    "removeAble":true,
+                    "props":{"centerY":0,"centerX":0},
+                    "nodeParent":4,
+                    "label":"Widget",
+                    "isDirectory":false,
+                    "isAniNode":true,
+                    "hasChild":false,
+                    "compId":29,
+                    "child":[
+                        ]
                 }]
+        },
+        {
+            "x":15,
+            "type":"Widget",
+            "switchAble":true,
+            "searchKey":"Widget",
+            "removeAble":true,
+            "props":{"top":0,"right":0,"left":0,"bottom":0},
+            "nodeParent":2,
+            "label":"Widget",
+            "isDirectory":false,
+            "isAniNode":true,
+            "hasChild":false,
+            "compId":28,
+            "child":[
+                ]
+        },
+        {
+            "x":15,
+            "type":"Script",
+            "switchAble":true,
+            "source":"src/game/GameMannger.ts",
+            "searchKey":"Script,GameMannger",
+            "removeAble":true,
+            "props":{"lblScoreValue":"@node:15","lblScoreHightValue":"@node:21","lblScoreCurrentValue":"@node:19","lblCountDownValue":"@node:13","dialogGameOver":"@node:16"},
+            "nodeParent":2,
+            "label":"GameMannger",
+            "isDirectory":false,
+            "isAniNode":true,
+            "hasChild":false,
+            "compId":32,
+            "child":[
+                ]
         }],
     "animations":[
         {
