@@ -9,8 +9,8 @@
     }
     GameConfig.width = 960;
     GameConfig.height = 640;
-    GameConfig.scaleMode = "fixedheight";
-    GameConfig.screenMode = "vertical";
+    GameConfig.scaleMode = "fixedauto";
+    GameConfig.screenMode = "none";
     GameConfig.alignV = "middle";
     GameConfig.alignH = "center";
     GameConfig.startScene = "GameScene.scene";

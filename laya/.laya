@@ -29,8 +29,8 @@ import Scene=Laya.Scene;]]>   </codeImportsTS>
    <trimempty>true   </trimempty>
    <startScene/>
    <engineType>2D   </engineType>
-   <scaleMode>fixedheight   </scaleMode>
-   <screenMode>vertical   </screenMode>
+   <scaleMode>fixedauto   </scaleMode>
+   <screenMode>none   </screenMode>
    <alignV>middle   </alignV>
    <alignH>center   </alignH>
    <designWidth>960   </designWidth>
@@ -46,7 +46,7 @@ import Scene=Laya.Scene;]]>   </codeImportsTS>
    <idePath/>
    <ver>2.0   </ver>
    <stat>false   </stat>
-   <physicsDebug>true   </physicsDebug>
+   <physicsDebug>false   </physicsDebug>
    <toJsonScene>true   </toJsonScene>
    <compressTexture>false   </compressTexture>
    <libProjectPath/>
